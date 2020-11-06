@@ -1,0 +1,37 @@
+img {
+width: 270px;
+height: 250px;
+margin: 12px 15px 12px 15px;
+}
+
+header {
+margin-left: 13px;
+}
+
+table {
+margin: 10px;
+}
+
+img {
+display: inline-block;
+}
+
+img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: .85;
+    -moz-opacity: .85;
+    -webkit-opacity: .85;
+    -o-opacity: .85;
+    }
+
+#imageGallery {
+height:292px;
+overflow-x: scroll;
+overflow-y: hidden;
+white-space: nowrap;
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Photo Gallery</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+<script>
+function imgSelectOn(element) {
+document.getElementById(element.id + "row").style = "background: yellow";
+}
+
+function imgSelectOff(element) {
+document.getElementById(element.id + "row").style = "background: none";
+}
+
+</script>
+</head>
+
+<body>
+<header>
+  <h1>Photo Gallery</h1>
+</header>
+
+<div class="table-responsive">
+
+<div id="imageGallery">
+<!--onmouseover="imgSelectOn()" onmouseout="imgSelectOff()" -->
+  <img id="photo1" onmouseover="imgSelectOn(this)" onmouseleave="imgSelectOff(this)" class="img-rounded" src="img/photo1.jpg" alt="Black and white warehouse; 2015">
+  <img id="photo2" onmouseover="imgSelectOn(this)" onmouseleave="imgSelectOff(this)" class="img-rounded" src="img/photo2.jpg" alt="Graffiti inside abandoned nuclear cooling tower; 2009">
+  <img id="photo3" onmouseover="imgSelectOn(this)" onmouseleave="imgSelectOff(this)" class="img-rounded" src="img/photo3.jpg" alt="Old IM Power Plant, Belgium; 2010">
+  <img id="photo4" onmouseover="imgSelectOn(this)" onmouseleave="imgSelectOff(this)" class="img-rounded" src="img/photo4.jpg" alt="Cargo ship docked at night; 2016">
+  <img id="photo5" onmouseover="imgSelectOn(this)" onmouseleave="imgSelectOff(this)" class="img-rounded" src="img/photo5.jpg" alt="Spiral staircase; 2016">
+  <img id="photo6" onmouseover="imgSelectOn(this)" onmouseleave="imgSelectOff(this)" class="img-rounded" src="img/photo6.jpg" alt="Old library; 2014">
+  <img id="photo7" onmouseover="imgSelectOn(this)" onmouseleave="imgSelectOff(this)" class="img-rounded" src="img/photo7.jpg" alt="Black and white radio station; 2017">
+</div>
+
+  <table class="table table-bordered" style="width: 80%">
+  <tr><th>Date</th><th>Filename</th><th>Description</th>
+  <tr id="photo1row"><td>2015</td><td>photo1.jpg</td><td>Black and white warehouse</td>
+  <tr id="photo2row"><td>2009</td><td>photo2.jpg</td><td>Graffiti inside abandoned nuclear cooling tower</td>
+  <tr id="photo3row"><td>2010</td><td>photo3.jpg</td><td>Old IM Power Plant, Belgium</td>
+  <tr id="photo4row"><td>2016</td><td>photo4.jpg</td><td>Cargo ship docked at night</td>
+  <tr id="photo5row"><td>2016</td><td>photo5.jpg</td><td>Spiral staircase</td>
+  <tr id="photo6row"><td>2014</td><td>photo6.jpg</td><td>Old library</td>
+  <tr id="photo7row"><td>2017</td><td>photo7.jpg</td><td>Black and white radio station</td>
+  </table>
+</div>
+
+</body>
+</html>
